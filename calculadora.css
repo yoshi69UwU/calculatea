@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.calculator {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="button"] {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00000;
+    color: #00000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #00000;
+}
+
+input[type="button"]:active {
+    background-color: #3e8e41;
+}
+input[type="button"]:active {
+    /* Otros estilos */
+    transform: translateY(1px);
+}
+.calculator {
+    /* Otros estilos */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@keyframes shine {
+    to {
+        background-color: #4CAF50;
+        box-shadow: 0 0 10px #4CAF50, 0 0 20px #4CAF50, 0 0 40px #4CAF50;
+    }
+}
+
+input[type="button"]:active {
+    animation: shine 0.3s forwards;
+}
+input[type="button"] {
+    /* Otros estilos */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s;
+}
+
+input[type="button"]:active {
+    /* Otros estilos */
+    background-color: #3e8e41;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.calculator {
+    /* Otros estilos */
+    transition: background-color 0.3s;
+}
+.corner-image {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+}
